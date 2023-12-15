@@ -1,5 +1,5 @@
 # ProductMicroservice
 ```
 gcloud init
-gcloud app init
+gcloud app deploy
 ```
