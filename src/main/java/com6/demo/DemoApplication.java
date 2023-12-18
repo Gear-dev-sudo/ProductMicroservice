@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @SpringBootApplication
 public class DemoApplication implements RepositoryRestConfigurer {
-//main app
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
