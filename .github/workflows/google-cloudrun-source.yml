@@ -52,7 +52,7 @@ on:
 
 env:
   PROJECT_ID: productmicroservice-408514 # TODO: update Google Cloud project id
-  SERVICE: productMicroservice # TODO: update Cloud Run service name
+  SERVICE: productserviceunique1 # TODO: update Cloud Run service name
   REGION: us-east1 # TODO: update Cloud Run service region
 
 jobs:
@@ -68,7 +68,9 @@ jobs:
 
       - uses: 'google-github-actions/auth@v2'
         with:
-          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' # Replace with the name of your GitHub Actions secret
+          project_id: 'productmicroservice-408514'
+          workload_identity_provider: 'projects/552948332155/locations/global/workloadIdentityPools/github/providers/my-repo'
+
       # NOTE: Alternative option - authentication via credentials json
       # - name: Google Auth
       #   id: auth
