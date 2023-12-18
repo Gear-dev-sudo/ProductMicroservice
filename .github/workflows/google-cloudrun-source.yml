@@ -52,8 +52,8 @@ on:
 
 env:
   PROJECT_ID: productmicroservice-408514 # TODO: update Google Cloud project id
-  SERVICE: productserviceunique # TODO: update Cloud Run service name
-  REGION: us-central1 # TODO: update Cloud Run service region
+  SERVICE: productserviceunique1 # TODO: update Cloud Run service name
+  REGION: us-east1 # TODO: update Cloud Run service region
 
 jobs:
   deploy:
@@ -82,8 +82,8 @@ jobs:
         id: deploy
         uses: google-github-actions/deploy-cloudrun@v2.0.0
         with:
-          service: ${{ env.SERVICE }}
-          region: ${{ env.REGION }}
+          service: ${{env.SERVICE}}
+          region: ${{env.REGION}}
           # NOTE: If required, update to the appropriate source folder
           source: ./
 
