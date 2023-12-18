@@ -68,8 +68,8 @@ jobs:
 
       - uses: 'google-github-actions/auth@v2'
         with:
-          project_id: 'productmicroservice-408514'
-          workload_identity_provider: 'projects/552948332155/locations/global/workloadIdentityPools/github/providers/my-repo'
+          service_account: 'my-service-account@productmicroservice-408514.iam.gserviceaccount.com' # my-service-account@my-project.iam.gserviceaccount.com
+          workload_identity_provider: 'projects/552948332155/locations/global/workloadIdentityPools/github/providers/my-repo' # "projects/123456789/locations/global/workloadIdentityPools/github/providers/my-repo"
 
       # NOTE: Alternative option - authentication via credentials json
       # - name: Google Auth
