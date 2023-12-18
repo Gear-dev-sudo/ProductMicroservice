@@ -51,7 +51,7 @@ on:
     branches: [ "main" ]
 
 env:
-  PROJECT_ID: productmicroservice-408514 # TODO: update Google Cloud project id
+  PROJECT_ID: project-cicd-microservice # TODO: update Google Cloud project id
   SERVICE: productserviceunique1 # TODO: update Cloud Run service name
   REGION: us-east1 # TODO: update Cloud Run service region
 
